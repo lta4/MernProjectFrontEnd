@@ -8,7 +8,7 @@ function App() {
   //URL VARIABLE
   const url = "https://mernprojectbackend.herokuapp.com"
   // LIST OF ICECREAM
-  const [icecream, setIcecreams] = React.useState([])
+  const [icecreams, setIcecreams] = React.useState([])
   // EMPTY ICECREAM
   const emptyIcecream = {
     name: "",
@@ -85,7 +85,7 @@ function App() {
       <hr />
       <main>
         <Switch>
-          <Route exact path="/" render={(rp) => <Display {...rp} icecream={icecream} selectIcecream={selectIcecream} deleteIcecream={deleteIcecream}/>} />
+          <Route exact path="/" render={(rp) => <Display {...rp} icecreams={icecreams} selectIcecreams={selectIcecream} deleteIcecreams={deleteIcecream}/>} />
           <Route
             exact
             path="/create"
