@@ -85,7 +85,7 @@ function App() {
       <hr />
       <main>
         <Switch>
-          <Route exact path="/" render={(rp) => <Display {...rp} icecreams={icecreams} selectIcecream={selectIcecream} deleteIcecream={deleteIcecream}/>} />
+          <Route exact path="/" render={(rp) => <Display {...rp} icecream={icecream} selectIcecream={selectIcecream} deleteIcecream={deleteIcecream}/>} />
           <Route
             exact
             path="/create"
