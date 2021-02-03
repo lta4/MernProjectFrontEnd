@@ -15,3 +15,16 @@ code {
 html {
   background-color: lightpink;
 }
+
+.picks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.descriptions {
+  font-size: 15px;
+}
+
+.flavors {
+  display: inline-flex;
+}

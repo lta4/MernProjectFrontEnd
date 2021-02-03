@@ -20,12 +20,14 @@ const Form = (props) => {
             <input
                 type="text"
                 name="name"
+                placeholder="Ice Cream Choice"
                 value={formData.name}
                 onChange={handleChange}
             />
             <input
                 type="text"
                 name="flavor"
+                placeholder="Flavor Choice"
                 value={formData.flavor}
                 onChange={handleChange}
             />
