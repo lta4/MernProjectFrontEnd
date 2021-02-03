@@ -1,10 +1,10 @@
 import React from "react";
 
 const Display = (props) => {
-    // DESTRUCTURING ICECREAM FROM PROPS
     console.log("props", props)
     const {icecreams} = props
-    // LOADING FUNCTION FOR IF ICECREAM EXISTS
+    // const {shops} = props
+
     const loaded = () => {
         return (<div style={{textAlign: "center"}}>
             {icecreams.icecream.map(icecream => {
@@ -18,14 +18,42 @@ const Display = (props) => {
                     <button onClick={() => {
                         props.deleteIcecreams(icecream)
                     }}>Delete Ice Cream</button>
+                        <p>Enjoy!</p>
                 </article>)
             })}
         </div>)
     }
 
-    const loading = <h1>Loading...</h1>
+    // const loading = <h1>Loading...</h1>
+    // return icecreams.length !== 0 ? loaded () : loading;
 
-    return icecreams.length !== 0 ? loaded () : loading;
+// const loaded2 = () => {
+//     return (<div style={{textAlign: "center"}}>
+//         {shops.shop.map(shop => {
+//             return (<article key={shop._id}>
+//                 <h1>{shop.name}</h1>
+//                 <h3>{shop.yearBuilt}</h3>
+//                 <button onClick={() => {
+//                     props.selectShops(shop)
+//                     props.history.push("/edit")
+//                 }}>Edit Ice Cream</button>
+//                 <button onClick={() => {
+//                     props.deleteShops(shop)
+//                 }}>Delete Ice Cream</button>
+//                     <p>Enjoy!</p>
+//             </article>)
+//         })}
+//     </div>)
+// }
+
+// const loading2 = <h1>Loading...</h1>
+// const loading = <h1>Loading...</h1>
+// return shops.length !== 0 ? loaded2 () : loading2;
+
+
+const loading = <h1>Loading...</h1>
+
+return icecreams.length !== 0 ? loaded () : loading;
 };
 
 export default Display
