@@ -8,7 +8,7 @@ const Form = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         props.handleSubmit(formData);
-        props.history.pus("/");
+        props.history.push("/");
     };
 
     const handleChange = (event) => {
