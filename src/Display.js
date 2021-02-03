@@ -24,8 +24,8 @@ const Display = (props) => {
 
     const loading = <h1>Loading...</h1>
 
-    // return icecreams.length > 0 ? loaded () : loading;
-    return icecreams ? loaded() : loading;
+    return icecreams.length > 0 ? loaded () : loading;
+    // return icecreams ? loaded() : loading;
 };
 
 export default Display
