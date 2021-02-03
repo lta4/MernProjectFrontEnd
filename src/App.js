@@ -6,7 +6,7 @@ import Form from "./Form";
 
 function App() {
   //URL VARIABLE
-  const url = "https://icecreammern.netlify.app"
+  const url = "http://localhost:3000"
   // LIST OF ICECREAM
   const [icecream, setIcecreams] = React.useState([])
   // EMPTY ICECREAM
