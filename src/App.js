@@ -6,7 +6,7 @@ import Form from "./Form";
 
 function App() {
   //URL VARIABLE
-  const url = "http://localhost:3000"
+  const url = "https://mernprojectbackend.herokuapp.com/"
   // LIST OF ICECREAM
   const [icecream, setIcecreams] = React.useState([])
   // EMPTY ICECREAM
